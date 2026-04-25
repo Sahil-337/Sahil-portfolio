@@ -29,17 +29,17 @@ export const hero = {
       { label: 'Survey Responses Analyzed', value: '1,000+' },
       { label: 'Initiatives Researched', value: '250+' },
       { label: 'AI Evaluation Cycles', value: '50+' },
-      { label: 'Fundraising Supported', value: '$380K+' },
+      { label: 'Customer Accounts Supported', value: '100+' },
     ],
   },
 }
 
 // "Impact at a Glance" — big editorial numbers in their own band
 export const impactStats = [
-  { number: '$380K+', label: 'Early-stage fundraising supported via investor-facing KPI dashboards' },
-  { number: '50+', label: 'AI/ML evaluation cycles run on multi-modal storytelling systems' },
-  { number: '~20%', label: 'Cross-modal output consistency improvement' },
-  { number: '5,000+', label: 'Community members impacted through 250+ initiatives analyzed' },
+  { number: '1,000+', label: 'Survey responses analyzed for NLP-driven student support project' },
+  { number: '250+', label: 'University–community initiatives evaluated for institutional reporting' },
+  { number: '100+', label: 'Customer accounts supported across product analytics work' },
+  { number: '50+', label: 'AI/ML evaluation cycles run on multi-modal AI systems' },
   { number: '85%', label: 'Exhibition planning accuracy at WNDR Museum' },
   { number: '2,500+', label: 'Students supported by MindBridgeAI NLP system' },
 ]
@@ -47,11 +47,11 @@ export const impactStats = [
 export const about = {
   body: [
     "Data Scientist with a Master of Applied Science in Data Science from Illinois Institute of Technology and hands-on experience across machine learning, NLP, AI systems validation, BI reporting, and product analytics. Comfortable working end-to-end — from raw data and SQL pipelines to model evaluation, KPI dashboards, and stakeholder-ready reporting.",
-    "Recent work spans a startup-environment ML evaluation framework that helped support $380K+ in early-stage fundraising, an NLP-based mental health analytics project (1,000+ survey responses) selected for the SoReMo fellowship, and the founding and production of TEDxIllinois Tech across two annual cycles.",
+    "Recent work spans an ML evaluation framework for a confidential AI startup, an NLP-based mental health analytics project (1,000+ survey responses) selected for the SoReMo fellowship, and the founding and production of TEDxIllinois Tech across two annual cycles.",
   ],
   highlights: [
-    'ML evaluation frameworks supporting $380K+ in early-stage fundraising',
-    '~20% improvement in cross-modal output consistency across 50+ test cycles',
+    'ML evaluation frameworks improving cross-modal output consistency by ~20%',
+    'Analyzed 1,000+ NLP survey responses for a responsible-AI project',
     '85% improvement in exhibition planning accuracy at WNDR Museum',
     '35% improvement in response accuracy on a 2,500+ student NLP system',
   ],
@@ -91,7 +91,7 @@ export const dashboards = [
     id: 'mleval',
     title: 'AI/ML Evaluation Dashboard',
     subtitle:
-      'Dream Engine / XYN framework for AI output evaluation, validation workflows, and product performance.',
+      'Validation framework for AI output evaluation, comparison workflows, and product performance — built for a confidential AI startup.',
     tags: ['Python', 'SQL', 'Model Evaluation', 'Data Validation', 'AI Analytics', 'Retool'],
     kpis: [
       { label: 'Evaluation Cycles', value: '50+', tone: 'neutral' },
@@ -99,7 +99,7 @@ export const dashboards = [
       { label: 'Consistency Lift', value: '~20%', tone: 'pos' },
     ],
     description:
-      'Validation workflow that scores AI outputs across iteration cycles, surfaces drift between modules, and feeds technical KPIs into investor-facing reports.',
+      'Validation workflow that scores AI outputs across iteration cycles, surfaces drift between modules, and feeds technical KPIs into stakeholder reports.',
     chartKind: 'mleval',
     detail: [
       'Module-level comparison bars highlight consistency gaps across iterations.',
@@ -135,19 +135,19 @@ export const dashboards = [
 export const experience = [
   {
     title: 'Machine Learning & AI Strategy Analyst',
-    company: 'XYN LLC (Dream Engine)',
+    company: 'Confidential AI Startup',
     location: 'Chicago, IL',
     period: 'Jul 2025 – Present',
     bullets: [
-      'Architected and evaluated ML validation frameworks for multi-modal AI storytelling systems, designing structured comparison pipelines that improved cross-modal output consistency by ~20% and reduced evaluation ambiguity across 50+ iterative test cycles.',
-      'Developed investor-facing KPI dashboards and technical performance reports — synthesizing model metrics, experimental benchmarks, and product analytics to support $380K+ in early-stage fundraising and strategic investor engagement.',
-      'Partnered with executive leadership to formalize AI workflow documentation and validation protocols across 3+ core AI modules, improving model transparency and supporting 25+ structured product iteration cycles.',
+      'Architect and evaluate ML validation frameworks for multi-modal AI systems, designing structured comparison pipelines that improved cross-modal output consistency by ~20% and reduced evaluation ambiguity across 50+ iterative test cycles.',
+      'Develop KPI dashboards and technical performance reports — synthesizing model metrics, experimental benchmarks, and product analytics to support strategic stakeholder engagement and early-stage decision-making.',
+      'Partner with leadership to formalize AI workflow documentation and validation protocols across core AI modules, improving model transparency and supporting structured product iteration cycles.',
     ],
     skills: ['Python', 'SQL', 'Retool', 'KPI Dashboards', 'AI/ML Evaluation', 'Data Validation'],
     metrics: [
-      { v: '$380K+', l: 'Fundraising supported' },
       { v: '50+', l: 'Eval cycles' },
       { v: '~20%', l: 'Consistency lift' },
+      { v: '25+', l: 'Iteration cycles' },
     ],
   },
   {
@@ -253,25 +253,25 @@ export const projects = [
   },
   {
     id: 'dream-engine',
-    title: 'Dream Engine / XYN — AI/ML Evaluation Framework',
+    title: 'AI Model Evaluation & Analytics Framework',
     categories: ['AI/ML', 'Analytics', 'Business Intelligence'],
     featured: true,
     period: 'Jul 2025 – Present',
     description:
-      'Validation and analytics framework for multi-modal AI storytelling system outputs. Built KPI dashboards and performance reporting that fed product strategy, evaluation cycles, and investor-facing decisions.',
+      'Validation and analytics framework for multi-modal AI system outputs at a confidential AI startup. Built KPI dashboards and performance reporting that fed product strategy, evaluation cycles, and stakeholder decisions.',
     tools: ['Python', 'SQL', 'Retool', 'Model Evaluation', 'Data Validation', 'KPI Dashboards', 'AI Analytics'],
-    impact: '$380K+ fundraising supported · 50+ evaluation cycles · ~20% cross-modal consistency lift.',
+    impact: '50+ evaluation cycles · ~20% cross-modal consistency lift · structured validation across core AI modules.',
     highlightStats: [
-      { v: '$380K+', l: 'Fundraising supported' },
       { v: '50+', l: 'Eval cycles' },
       { v: '~20%', l: 'Consistency lift' },
+      { v: '25+', l: 'Iteration cycles' },
     ],
     dashboardId: 'mleval',
     details: [
       'Built structured comparison pipelines across multi-modal AI workflows.',
       'Designed KPI dashboards combining model metrics, experimentation benchmarks, and product analytics.',
-      'Documented workflows and validation protocols for repeatable evaluation across 3+ core modules.',
-      'Translated technical outputs into strategic insights with executive leadership.',
+      'Documented workflows and validation protocols for repeatable evaluation across core modules.',
+      'Translated technical outputs into strategic insights with leadership.',
     ],
   },
   {
@@ -665,7 +665,7 @@ export const skillStack = [
       { name: 'Process Improvement', strength: 'Strong' },
       { name: 'Requirements Gathering', strength: 'Strong' },
       { name: 'Forecasting & Planning', strength: 'Working' },
-      { name: 'Investor / Executive Reporting', strength: 'Strong' },
+      { name: 'Executive Reporting', strength: 'Strong' },
     ],
   },
   {
@@ -689,6 +689,64 @@ export const skillCategoryFilters = ['All', 'Technical', 'Business', 'Soft']
 
 export const coreStack = [
   'Python', 'SQL', 'XGBoost', 'NLP', 'Power BI', 'Tableau', 'KPI Dashboards', 'Data Validation',
+]
+
+// ────────────────────────────────────────────────────────────
+// Where I Fit Best — recruiter-mapping
+// ────────────────────────────────────────────────────────────
+export const roleFit = [
+  {
+    role: 'Data Analyst',
+    icon: 'BarChart3',
+    pitch:
+      'SQL + Python workflows, KPI dashboards, sentiment & survey analytics, and stakeholder-ready reporting across business, research, and product contexts.',
+    proof: ['WNDR Museum BI dashboards', '250+ initiatives analyzed', 'Sentiment + visitor analytics'],
+  },
+  {
+    role: 'BI Analyst',
+    icon: 'PieChart',
+    pitch:
+      'Power BI and Tableau dashboards combining ticketing, behavior, and sentiment — improving reporting accuracy and surfacing decision-ready insights.',
+    proof: ['+85% planning accuracy', '−20% reporting discrepancies', 'Cross-functional KPI design'],
+  },
+  {
+    role: 'Product Analyst',
+    icon: 'Target',
+    pitch:
+      'Customer feedback loops, market-fit analysis, A/B testing, and product analytics that translate user signal into measurable improvements.',
+    proof: ['+30% CSAT (Greater Than Equal)', '+25% process efficiency', 'GPT/AI agent for engagement'],
+  },
+  {
+    role: 'Data Scientist',
+    icon: 'Brain',
+    pitch:
+      'End-to-end ML — preprocessing, feature engineering, modeling (Random Forest, Naive Bayes, XGBoost), cross-validation, NLP, and time-series forecasting.',
+    proof: ['92% Boston Housing accuracy', '85% Disneyland sentiment classifier', '82% time-series forecast'],
+  },
+  {
+    role: 'ML / AI Analyst',
+    icon: 'Sparkles',
+    pitch:
+      'AI systems validation — structured comparison pipelines, model evaluation frameworks, and KPI dashboards for multi-modal AI outputs.',
+    proof: ['~20% consistency lift', '50+ evaluation cycles', 'Responsible-AI framing'],
+  },
+  {
+    role: 'Analytics Engineer',
+    icon: 'Database',
+    pitch:
+      'Reliable reporting layers — data validation, modeling, workflow automation, and documentation that turn raw datasets into trusted KPI sources.',
+    proof: ['Retool + SQL pipelines', 'KPI dashboards productionized', 'Validation protocols documented'],
+  },
+]
+
+// Animated stats strip — single-line band of 6 hero numbers
+export const statsStrip = [
+  { v: '1,000+', l: 'Survey responses analyzed' },
+  { v: '250+', l: 'Initiatives evaluated' },
+  { v: '100+', l: 'Client accounts supported' },
+  { v: '50+', l: 'AI test cycles evaluated' },
+  { v: '+30%', l: 'Campaign engagement' },
+  { v: '−20%', l: 'Reporting discrepancies' },
 ]
 
 export const education = [
