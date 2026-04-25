@@ -1,87 +1,44 @@
-# Mohammed Sahil — Portfolio
+# Mohammed Sahil — Portfolio (v2)
 
-Data Science & Analytics portfolio site. React + Vite + Tailwind. Single-page, fully responsive, deploys in minutes.
+Interactive Data Science & Analytics portfolio. React + Vite + Tailwind. Dark mode, sticky nav, dashboard previews, filterable projects, leadership cards, achievements, and a categorized skill stack.
 
 ---
 
-## Local setup
+## Quick start
 
 ```bash
-# 1. Install Node.js 18+ if you don't have it: https://nodejs.org
-# 2. In this folder:
+# Requires Node 18+
 npm install
-npm run dev
-```
-
-Open `http://localhost:5173` in your browser.
-
-To build a production bundle:
-
-```bash
-npm run build    # outputs to /dist
-npm run preview  # preview the built site locally
+npm run dev          # http://localhost:5173
+npm run build        # production build → /dist
+npm run preview      # preview the built site locally
 ```
 
 ---
 
-## Replace the resume PDF
+## Drop these two assets into `/public/`
 
-1. Drop your latest PDF into `/public/`
-2. Name it exactly `Mohammed_Sahil_Resume.pdf`
-3. (Or change the filename and update `profile.resumePath` in `src/data/content.js`)
-4. Commit and redeploy
+1. **`profile.jpg`** — your professional headshot. The hero will gracefully fall back to `MS` initials if missing.
+2. **`Mohammed-Sahil-Resume.pdf`** — already included; replace any time.
 
 ---
 
-## Update content
+## Where to update content
 
-All copy lives in one file: **`src/data/content.js`**.
+All copy lives in **`src/data/content.js`**:
 
-- Hero headline / subheadline / badges
-- About paragraphs + highlights
-- Skills groups
-- Experience roles + bullets
-- Projects (case studies with problem / approach / tools / impact)
-- Education + certifications
-- Target roles + contact info
+- `profile` — name, location, contact, file paths
+- `hero` — headline, subheadline, badges, snapshot KPIs
+- `about`
+- `dashboards` — three interactive dashboard previews
+- `projects` — filterable project cards (categories: Analytics / AI/ML / BI / Data Engineering / Research)
+- `experience` — timeline roles
+- `leadership` — TEDx + SoReMo + degree (with external links)
+- `achievements` — flat list with icons
+- `skillStack` — categorized skills with `Core / Strong / Working / Familiar` strength labels
+- `coreStack` — highlighted "most-used" pills
 
-Edit there, save, and the site updates live in `npm run dev`.
-
----
-
-## Deploy to Vercel (recommended)
-
-1. Create a new GitHub repo (e.g. `sahil-portfolio`)
-2. In this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/sahil-portfolio.git
-   git push -u origin main
-   ```
-3. Go to [vercel.com](https://vercel.com) → **Add New → Project**
-4. Import the GitHub repo
-5. Vercel auto-detects Vite — leave defaults:
-   - Framework: **Vite**
-   - Build command: `npm run build`
-   - Output directory: `dist`
-6. Click **Deploy**. You'll get a URL like `sahil-portfolio.vercel.app` in about 60 seconds.
-7. (Optional) Add a custom domain in **Settings → Domains**.
-
----
-
-## Deploy to Netlify (alternative)
-
-1. Push to GitHub (same as above)
-2. Go to [app.netlify.com](https://app.netlify.com) → **Add new site → Import from Git**
-3. Pick your repo and set:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-4. Click **Deploy site**
-
-Or drag the `/dist` folder into the Netlify dashboard after running `npm run build` locally.
+Edit there, save, and the site updates live in dev.
 
 ---
 
@@ -95,26 +52,85 @@ portfolio/
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── .gitignore
+├── README.md
 ├── public/
-│   ├── Mohammed_Sahil_Resume.pdf
-│   └── favicon.svg
+│   ├── Mohammed-Sahil-Resume.pdf
+│   ├── favicon.svg
+│   └── README-ASSETS.txt           ← drop profile.jpg here
 └── src/
     ├── main.jsx
     ├── App.jsx
     ├── index.css
     ├── data/
-    │   └── content.js
+    │   └── content.js              ← all copy lives here
+    ├── hooks/
+    │   ├── useTheme.js
+    │   └── useActiveSection.js
     └── components/
         ├── Navbar.jsx
         ├── Hero.jsx
-        ├── SectionHeader.jsx
         ├── About.jsx
-        ├── Skills.jsx
-        ├── Experience.jsx
+        ├── Dashboards.jsx
         ├── Projects.jsx
-        ├── Visuals.jsx
-        ├── Education.jsx
-        ├── Resume.jsx
+        ├── Experience.jsx
+        ├── Leadership.jsx
+        ├── Achievements.jsx
+        ├── Skills.jsx
         ├── Contact.jsx
+        ├── Charts.jsx               ← all custom SVG charts
+        ├── SectionHeader.jsx
+        ├── BackToTop.jsx
         └── Footer.jsx
 ```
+
+---
+
+## Deploy on Vercel
+
+This is a standard Vite project — Vercel auto-detects everything.
+
+1. Create a GitHub repo and push:
+   ```bash
+   git init
+   git add .
+   git commit -m "portfolio v2"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USER/sahil-portfolio.git
+   git push -u origin main
+   ```
+2. [vercel.com](https://vercel.com) → **Add New → Project** → import the repo
+3. Build defaults (no changes needed):
+   - Framework: **Vite**
+   - Build command: `npm run build`
+   - Output directory: `dist`
+4. Click **Deploy**.
+
+If you're updating an existing Vercel project, just push to `main` — Vercel redeploys automatically.
+
+---
+
+## Deploy on Netlify (alt)
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+Or drag the `/dist` folder into Netlify after `npm run build`.
+
+---
+
+## Features at a glance
+
+- ✅ Sticky navbar with active section highlighting
+- ✅ Dark / light mode toggle with persisted preference (no flash on load)
+- ✅ Smooth scroll, back-to-top button, accessible focus states
+- ✅ Hero with profile + analytics snapshot card
+- ✅ 3 interactive dashboards (tab switching, expandable details, custom SVG charts)
+- ✅ Filterable projects (All / Analytics / AI/ML / BI / Data Engineering / Research)
+- ✅ Vertical experience timeline
+- ✅ Leadership cards with TEDx + SoReMo external links
+- ✅ Achievements grid with icon-coded categories
+- ✅ Skill stack with category filter, search, strength bars
+- ✅ All charts are custom SVG — no chart library
+- ✅ Single content file for all copy
+
+Production bundle: ~62 KB JS gzipped, ~6 KB CSS gzipped.
