@@ -23,9 +23,9 @@ export default function Dashboards() {
       <div className="mx-auto max-w-content px-5 py-20 md:px-8 md:py-24">
         <SectionHeader
           num={4}
-          eyebrow="Interactive Analytics & Dashboard Portfolio"
+          eyebrow="Interactive Analytics & Dashboard Work"
           title="Dashboards I've built — and how they think."
-          description="Three working previews based on real project themes. Each shows the KPIs, visualizations, and analytical lens behind the work. Mock data for portfolio display."
+          description="Three working previews based on real project themes. Each shows the KPIs, visualizations, and analytical lens behind the work. Sample/anonymized data for portfolio display."
         />
 
         {/* Tabs */}

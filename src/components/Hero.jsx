@@ -4,13 +4,15 @@ import { hero, profile } from '../data/content'
 import { MiniBarChart, MiniLineChart, ProgressBar } from './Charts'
 import TypeRotator from './TypeRotator'
 import Spotlight from './Spotlight'
+import NeuralParticles from './NeuralParticles'
 import { useCountUp } from '../hooks/useCountUp'
 
 const rotatingRoles = [
-  'Data Scientist',
-  'ML & NLP Engineer',
-  'AI Systems Validator',
-  'Product Analytics Partner',
+  'AI evaluation systems.',
+  'NLP & ML pipelines.',
+  'KPI dashboards.',
+  'product analytics.',
+  'decision-ready insights.',
 ]
 
 export default function Hero() {
@@ -22,6 +24,8 @@ export default function Hero() {
       <div className="aurora" aria-hidden="true" />
       <div className="aurora-2" aria-hidden="true" />
       <div className="absolute inset-0 -z-10 hero-grid" aria-hidden="true" />
+      {/* Neural network particles — subtle data-science ornament */}
+      <NeuralParticles className="absolute inset-0 -z-[5] h-full w-full text-accent/40 opacity-50 dark:text-accent-glow/50" />
 
       <div className="mx-auto max-w-content px-5 pb-20 md:px-8 md:pb-28">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
@@ -46,7 +50,7 @@ export default function Hero() {
             </div>
 
             <h1 className="mt-7 font-display font-semibold tracking-tighter2 text-ink-900 dark:text-ink-100 animate-fade-up text-[42px] leading-[1.04] md:text-[68px] md:leading-[1.02] lg:text-[76px]">
-              <span className="block">Building as a</span>
+              <span className="block">Data Scientist building</span>
               <span className="block min-h-[1.05em]">
                 <TypeRotator words={rotatingRoles} />
               </span>
@@ -60,7 +64,7 @@ export default function Hero() {
               </span>
               <span className="uppercase tracking-wider">Now</span>
               <span className="text-ink-700 dark:text-ink-200">
-                Building AI evaluation & validation frameworks @ XYN LLC
+                Building AI evaluation & validation frameworks at an AI startup
               </span>
             </div>
 
@@ -86,7 +90,7 @@ export default function Hero() {
                 View Projects <ArrowUpRight size={16} />
               </a>
               <a href="#dashboards" className="btn-secondary">
-                <BarChart3 size={16} /> Explore Dashboards
+                <BarChart3 size={16} /> View Dashboards
               </a>
               <a href={profile.resumePath} download className="btn-secondary">
                 <Download size={16} /> Resume
@@ -96,6 +100,9 @@ export default function Hero() {
               </a>
               <a href={profile.github} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 <Github size={16} /> GitHub
+              </a>
+              <a href={`mailto:${profile.email}`} className="btn-secondary">
+                <Mail size={16} /> Email
               </a>
             </div>
 

@@ -52,7 +52,7 @@ export default function Skills() {
     <section id="skills" className="border-t border-ink-900/10 bg-white dark:border-white/10 dark:bg-night-800/50">
       <div className="mx-auto max-w-content px-5 py-20 md:px-8 md:py-24">
         <SectionHeader
-          num={7}
+          num={8}
           eyebrow="Skill Stack"
           title="Technical, business, and the way I work."
           description="Filter by area or search a tool. Strength labels reflect how I actually use these — Core is everyday, Familiar is supporting knowledge."

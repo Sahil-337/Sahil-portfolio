@@ -7,9 +7,9 @@ export default function Contact() {
     <section id="contact" className="border-t border-ink-900/10 bg-white dark:border-white/10 dark:bg-night-800/50">
       <div className="mx-auto max-w-content px-5 py-20 md:px-8 md:py-24">
         <SectionHeader
-          num={8}
+          num={9}
           eyebrow="Contact"
-          title="Let's connect."
+          title="Let's connect if you're hiring for data, analytics, AI, or BI roles."
           description="Based in Chicago, available across U.S. time zones. Happy to discuss data, analytics, BI, product analytics, ML/AI, or research-engineering opportunities."
         />
 

@@ -33,7 +33,7 @@ export default function ImpactBand() {
 }
 
 function ImpactCell({ stat, delay }) {
-  // Parse the leading number (handles $380K+, 50+, ~20%, 5,000+, 85%, 2,500+)
+  // Parse the leading number (handles 50+, ~20%, 5,000+, 85%, 2,500+)
   const match = stat.number.match(/[\d,.]+/)
   const numeric = match ? parseFloat(match[0].replace(/,/g, '')) : null
   const prefix = match ? stat.number.slice(0, match.index) : ''
